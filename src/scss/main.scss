@@ -1,0 +1,258 @@
+body {
+  width: 100vw;
+  color: $night-blue;
+  font-family: 'TrebuchetMS', 'sans-serif';
+}
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  transition: 0.4s;
+  h1 {
+    color: white;
+    font-size: 1rem;
+  }
+  img {
+    width: 50px;
+  }
+}
+.contact-us {
+  display: none;
+}
+.header--scroll {
+  background-color: $flashy-red;
+  transition: 0.4s;
+}
+section {
+  padding: 0 30px;
+}
+.landing {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url('../pictures/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar {
+  display: none;
+}
+.logo {
+  margin-top: 5rem;
+}
+.introduction {
+  height: 280px;
+  background-color: $night-blue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  h2 {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+.introduction-desktop {
+  display: none;
+}
+.ambition {
+  font-size: 1rem;
+  h3 {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: $flashy-red;
+  }
+}
+.buttons {
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  background-color: $flashy-red;
+  font-size: 1rem;
+  color: white;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+}
+.picture {
+  width: 100%;
+  margin-top: 20px;
+}
+.last-text {
+  margin-top: 20px;
+}
+.video {
+  height: 510px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: $night-blue;
+  color: white;
+}
+.more {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  background-color: $light-blue;
+  color: white;
+  h2 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
+footer {
+  height: 140px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $night-blue;
+  .icons {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 900px) {
+  header {
+    justify-content: flex-end;
+    img {
+      display: none;
+    }
+  }
+  .contact-us {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    background-color: $flashy-red;
+    font-size: 1rem;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+  .landing {
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    background-image: url('../pictures/background-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .logo {
+    height: 80px;
+    margin-top: 150px;
+  }
+  .introduction {
+    display: none;
+  }
+  .introduction-desktop {
+    display: block;
+    width: 500px;
+    margin-top: 150px;
+    font-size: 1.5rem;
+  }
+  .navbar {
+    background-color: $flashy-red;
+    color: white;
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+  .buttons {
+    width: unset;
+  }
+  .picture {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .ambition {
+    display: flex;
+    flex-wrap: wrap;
+    h3 {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: $flashy-red;
+    }
+  }
+  .ambition__first-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    .ambition__first-section--container {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      h2 {
+        font-size: 2rem;
+        line-height: 50px;
+      }
+      .buttons {
+        margin: 0;
+        margin-top: 20px;
+      }
+    }
+  }
+  .ambition__second-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    img {
+      width: 500px;
+    }
+    .ambition__second-section--container {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .buttons {
+        margin: 0;
+        margin-top: 20px;
+      }
+    }
+  }
+  .ambition__third-section {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 100px;
+    .last-text {
+      width: 700px;
+      text-align: left;
+      margin: 100px 0 100px 0;
+      font-size: 1.5rem;
+      line-height: 38px;
+    }
+  }
+  .video {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .more {
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      width: 600px;
+      font-size: 1.5rem;
+    }
+  }
+  footer {
+    .icons {
+      width: 20%;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
